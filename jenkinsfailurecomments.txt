@@ -1,0 +1,16 @@
+            System.out.println("object.get(o.toString()) "+object.get(o.toString()));
+            if (object.get(o.toString()) == "null") {
+                System.out.println("Inside the null if block");
+                System.out.println("o.tostring() "+o.toString());
+                assertEquals("", browsePage.getValueForField(o.toString()));
+            } else
+                assertEquals(object.get(o.toString()).toString().trim(), browsePage.getValueForField(o.toString()));
+            assertEquals(object.get(o.toString()).toString().trim(), browsePage.getValueForField(o.toString()));
+
+
+
+
+VOY-12548--- existing branch name at smoke cases
+
+
+develop--- copylive branch at smoke cases
